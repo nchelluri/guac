@@ -176,33 +176,35 @@ func (c *cyclonedxParser) getPackages() error {
 			// skipping over the "operating-system" type as it does not contain
 			// the required purl for package node. Currently there is no use-case
 			// to capture OS for GUAC.
-			if comp.Type != cdx.ComponentTypeOS {
-				purl := comp.PackageURL
-				if purl == "" {
-					if comp.Type == cdx.ComponentTypeContainer {
-						purl = parseContainerType(comp.Name, comp.Version, false)
-					} else if comp.Type == cdx.ComponentTypeFile {
-						purl = guacCDXFilePurl(comp.Name, comp.Version, false)
-					} else {
-						purl = asmhelpers.GuacPkgPurl(comp.Name, &comp.Version)
-					}
-				}
-				pkg, err := asmhelpers.PurlToPkg(purl)
-				if err != nil {
-					return err
-				}
-				c.packagePackages[comp.BOMRef] = append(c.packagePackages[comp.BOMRef], pkg)
-				c.identifierStrings.PurlStrings = append(c.identifierStrings.PurlStrings, comp.PackageURL)
+			if comp.Type == cdx.ComponentTypeOS {
+				continue
+			}
 
-				// if checksums exists create an artifact for each of them
-				if comp.Hashes != nil {
-					for _, checksum := range *comp.Hashes {
-						artifact := &model.ArtifactInputSpec{
-							Algorithm: strings.ToLower(string(checksum.Algorithm)),
-							Digest:    checksum.Value,
-						}
-						c.packageArtifacts[comp.BOMRef] = append(c.packageArtifacts[comp.BOMRef], artifact)
+			purl := comp.PackageURL
+			if purl == "" {
+				if comp.Type == cdx.ComponentTypeContainer {
+					purl = parseContainerType(comp.Name, comp.Version, false)
+				} else if comp.Type == cdx.ComponentTypeFile {
+					purl = guacCDXFilePurl(comp.Name, comp.Version, false)
+				} else {
+					purl = asmhelpers.GuacPkgPurl(comp.Name, &comp.Version)
+				}
+			}
+			pkg, err := asmhelpers.PurlToPkg(purl)
+			if err != nil {
+				return err
+			}
+			c.packagePackages[comp.BOMRef] = append(c.packagePackages[comp.BOMRef], pkg)
+			c.identifierStrings.PurlStrings = append(c.identifierStrings.PurlStrings, comp.PackageURL)
+
+			// if checksums exists create an artifact for each of them
+			if comp.Hashes != nil {
+				for _, checksum := range *comp.Hashes {
+					artifact := &model.ArtifactInputSpec{
+						Algorithm: strings.ToLower(string(checksum.Algorithm)),
+						Digest:    checksum.Value,
 					}
+					c.packageArtifacts[comp.BOMRef] = append(c.packageArtifacts[comp.BOMRef], artifact)
 				}
 			}
 		}
