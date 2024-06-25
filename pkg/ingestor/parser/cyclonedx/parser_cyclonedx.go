@@ -207,6 +207,20 @@ func (c *cyclonedxParser) getPackages() error {
 					c.packageArtifacts[comp.BOMRef] = append(c.packageArtifacts[comp.BOMRef], artifact)
 				}
 			}
+
+			if comp.Licenses != nil {
+				const justification string = "Found in CycloneDX document."
+
+				if len(*comp.Licenses) == 1 && (*comp.Licenses)[0].Expression != "" {
+					// cl := &model.CertifyLegalInputSpec{
+					// 	Justification: justification,
+					// }
+				}
+
+				// for _, license := range *comp.Licenses {
+				// 	if license.Expression !=
+				// }
+			}
 		}
 	}
 	return nil
