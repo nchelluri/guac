@@ -50,10 +50,12 @@ cloud.google.com/go/datastore v1.1.0/go.mod h1:umbIZjpQpHh4hmRpGhH4tLFup+FVzqBi1
 cloud.google.com/go/firestore v1.6.1/go.mod h1:asNXNOzBdyVQmEU+ggO8UPodTkEVFW5Qx+rwHnAz+EY=
 cloud.google.com/go/iam v1.4.2 h1:4AckGYAYsowXeHzsn/LCKWIwSWLkdb0eGjH8wWkd27Q=
 cloud.google.com/go/iam v1.4.2/go.mod h1:REGlrt8vSlh4dfCJfSEcNjLGq75wW75c5aU3FLOYq34=
+cloud.google.com/go/kms v1.21.0 h1:x3EeWKuYwdlo2HLse/876ZrKjk2L5r7Uexfm8+p6mSI=
 cloud.google.com/go/kms v1.21.1 h1:r1Auo+jlfJSf8B7mUnVw5K0fI7jWyoUy65bV53VjKyk=
 cloud.google.com/go/kms v1.21.1/go.mod h1:s0wCyByc9LjTdCjG88toVs70U9W+cc6RKFc8zAqX7nE=
 cloud.google.com/go/logging v1.13.0 h1:7j0HgAp0B94o1YRDqiqm26w4q1rDMH7XNRU34lJXHYc=
 cloud.google.com/go/logging v1.13.0/go.mod h1:36CoKh6KA/M0PbhPKMq6/qety2DCAErbhXT62TuXALA=
+cloud.google.com/go/longrunning v0.6.5 h1:sD+t8DO8j4HKW4QfouCklg7ZC1qC4uzVZt8iz3uTW+Q=
 cloud.google.com/go/longrunning v0.6.6 h1:XJNDo5MUfMM05xK3ewpbSdmt7R2Zw+aQEMbdQR65Rbw=
 cloud.google.com/go/longrunning v0.6.6/go.mod h1:hyeGJUrPHcx0u2Uu1UFSoYZLn4lkMrccJig0t4FI7yw=
 cloud.google.com/go/monitoring v1.24.1 h1:vKiypZVFD/5a3BbQMvI4gZdl8445ITzXFh257XBgrS0=
@@ -71,6 +73,7 @@ cloud.google.com/go/storage v1.8.0/go.mod h1:Wv1Oy7z6Yz3DshWRJFhqM/UCfaWIRTdp0RX
 cloud.google.com/go/storage v1.10.0/go.mod h1:FLPqc6j+Ki4BU591ie1oL6qBQGu2Bl/tZ9ullr3+Kg0=
 cloud.google.com/go/storage v1.51.0 h1:ZVZ11zCiD7b3k+cH5lQs/qcNaoSz3U9I0jgwVzqDlCw=
 cloud.google.com/go/storage v1.51.0/go.mod h1:YEJfu/Ki3i5oHC/7jyTgsGZwdQ8P9hqMqvpi5kRKGgc=
+cloud.google.com/go/trace v1.11.3 h1:c+I4YFjxRQjvAhRmSsmjpASUKq88chOX854ied0K/pE=
 cloud.google.com/go/trace v1.11.5 h1:CALS1loyxJMnRiCwZSpdf8ac7iCsjreMxFD2WGxzzHU=
 cloud.google.com/go/trace v1.11.5/go.mod h1:TwblCcqNInriu5/qzaeYEIH7wzUcchSdeY2l5wL3Eec=
 dario.cat/mergo v1.0.1 h1:Ra4+bf83h2ztPIQYNP99R6m+Y7KfnARDfID+a+vLl4s=
@@ -272,6 +275,8 @@ github.com/aws/aws-sdk-go-v2/service/s3 v1.78.2 h1:jIiopHEV22b4yQP2q36Y0OmwLbsxN
 github.com/aws/aws-sdk-go-v2/service/s3 v1.78.2/go.mod h1:U5SNqwhXB3Xe6F47kXvWihPl/ilGaEDe8HD/50Z9wxc=
 github.com/aws/aws-sdk-go-v2/service/sns v1.34.2 h1:PajtbJ/5bEo6iUAIGMYnK8ljqg2F1h4mMCGh1acjN30=
 github.com/aws/aws-sdk-go-v2/service/sns v1.34.2/go.mod h1:PJtxxMdj747j8DeZENRTTYAz/lx/pADn/U0k7YNNiUY=
+github.com/aws/aws-sdk-go-v2/service/sqs v1.38.0 h1:8za7W7p6GaEbPNvNGuQty36qpQykCA+ONxh0LBp46qs=
+github.com/aws/aws-sdk-go-v2/service/sqs v1.38.0/go.mod h1:Bar4MrRxeqdn6XIh8JGfiXuFRmyrrsZNTJotxEJmWW0=
 github.com/aws/aws-sdk-go-v2/service/sqs v1.38.3 h1:j5BchjfDoS7K26vPdyJlyxBIIBGDflq3qjjJKBDlbcI=
 github.com/aws/aws-sdk-go-v2/service/sqs v1.38.3/go.mod h1:Bar4MrRxeqdn6XIh8JGfiXuFRmyrrsZNTJotxEJmWW0=
 github.com/aws/aws-sdk-go-v2/service/sso v1.25.2 h1:pdgODsAhGo4dvzC3JAG5Ce0PX8kWXrTZGx+jxADD+5E=
@@ -1085,6 +1090,8 @@ github.com/pingcap/kvproto v0.0.0-20230904082117-ecdbf1f8c130 h1:qbLm5cOdCWxZ0mt
 github.com/pingcap/kvproto v0.0.0-20230904082117-ecdbf1f8c130/go.mod h1:r0q/CFcwvyeRhKtoqzmWMBebrtpIziQQ9vR+JKh1knc=
 github.com/pingcap/log v1.1.1-0.20221110025148-ca232912c9f3 h1:HR/ylkkLmGdSSDaD8IDP+SZrdhV1Kibl9KrHxJ9eciw=
 github.com/pingcap/log v1.1.1-0.20221110025148-ca232912c9f3/go.mod h1:DWQW5jICDR7UJh4HtxXSM20Churx4CQL0fwL/SoOSA4=
+github.com/pitabwire/natspubsub v0.1.8 h1:+pOhUNH+mkdcGzQFZMiNzjjgK4lDX1j0QYJgQwcwFc4=
+github.com/pitabwire/natspubsub v0.1.8/go.mod h1:pEF6ULDkCP69o+JrJAPVBDzyHQZCkyJDuWIA/MUl5kk=
 github.com/pitabwire/natspubsub v0.1.9 h1:0LTE+bQlOkhZ01dWSEGI4/ZnG5K8Gp5HH0TrsLbMOo0=
 github.com/pitabwire/natspubsub v0.1.9/go.mod h1:IR+8xxMIpJgahPnJEZHAJ0Thei50TFradv2JA+fF8qQ=
 github.com/pjbgf/sha1cd v0.3.2 h1:a9wb0bp1oC2TGwStyn0Umc/IGKQnEgF0vVaZ8QF8eo4=
@@ -1436,6 +1443,7 @@ go.uber.org/zap v1.18.1/go.mod h1:xg/QME4nWcxGxrpdeYfq7UvYrLh66cuVKdrbD1XF/NI=
 go.uber.org/zap v1.19.0/go.mod h1:xg/QME4nWcxGxrpdeYfq7UvYrLh66cuVKdrbD1XF/NI=
 go.uber.org/zap v1.27.0 h1:aJMhYGrd5QSmlpLMr2MftRKl7t8J8PTZPA732ud/XR8=
 go.uber.org/zap v1.27.0/go.mod h1:GB2qFLM7cTU87MWRP2mPIjqfIDnGu+VIO4V/SdhGo2E=
+gocloud.dev v0.40.0/go.mod h1:drz+VyYNBvrMTW0KZiBAYEdl8lbNZx+OQ7oQvdrFmSQ=
 gocloud.dev v0.41.0 h1:qBKd9jZkBKEghYbP/uThpomhedK5s2Gy6Lz7h/zYYrM=
 gocloud.dev v0.41.0/go.mod h1:IetpBcWLUwroOOxKr90lhsZ8vWxeSkuszBnW62sbcf0=
 gocloud.dev/pubsub/kafkapubsub v0.40.0 h1:6gfRtOUd/ztKAQLYPUl7xFIVre9okcvKUp0CMaMSY18=

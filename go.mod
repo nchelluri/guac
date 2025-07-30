@@ -299,7 +299,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.36.3
 	github.com/aws/aws-sdk-go-v2/config v1.29.12
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.78.2
-	github.com/aws/aws-sdk-go-v2/service/sqs v1.38.3
+	github.com/aws/aws-sdk-go-v2/service/sqs v1.38.0
 	github.com/cdevents/sdk-go v0.4.1
 	github.com/cloudevents/sdk-go/v2 v2.15.2
 	github.com/fsnotify/fsnotify v1.8.0
@@ -331,7 +331,7 @@ require (
 	github.com/ossf/scorecard/v4 v4.13.1
 	github.com/package-url/packageurl-go v0.1.3
 	github.com/pandatix/go-cvss v0.6.2
-	github.com/pitabwire/natspubsub v0.1.9
+	github.com/pitabwire/natspubsub v0.1.8
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.21.1
 	github.com/redis/go-redis/v9 v9.7.3
@@ -348,7 +348,7 @@ require (
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.35.0
 	go.uber.org/mock v0.5.0
 	go.uber.org/ratelimit v0.3.1
-	gocloud.dev v0.41.0
+	gocloud.dev v0.40.0
 	gocloud.dev/pubsub/kafkapubsub v0.40.0
 	gocloud.dev/pubsub/rabbitpubsub v0.40.0
 	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f
