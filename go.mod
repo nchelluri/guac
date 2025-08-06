@@ -304,6 +304,7 @@ require (
 	github.com/cloudevents/sdk-go/v2 v2.15.2
 	github.com/fsnotify/fsnotify v1.8.0
 	github.com/getkin/kin-openapi v0.131.0
+	github.com/gin-gonic/gin v1.9.1
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/chi/v5 v5.2.1
 	github.com/go-git/go-git/v5 v5.14.0
@@ -321,6 +322,7 @@ require (
 	github.com/kubescape/storage v0.0.166
 	github.com/lib/pq v1.10.9
 	github.com/manifoldco/promptui v0.9.0
+	github.com/mattn/go-sqlite3 v1.14.22
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/nats-io/nats-server/v2 v2.11.0
 	github.com/nats-io/nats.go v1.41.1
@@ -372,11 +374,14 @@ require (
 	github.com/bmatcuk/doublestar v1.3.4 // indirect
 	github.com/bmatcuk/doublestar/v4 v4.8.1 // indirect
 	github.com/briandowns/spinner v1.23.1 // indirect
+	github.com/bytedance/sonic v1.10.0-rc3 // indirect
 	github.com/charmbracelet/colorprofile v0.2.3-0.20250311203215-f60798e515dc // indirect
 	github.com/charmbracelet/lipgloss v1.1.0 // indirect
 	github.com/charmbracelet/x/ansi v0.8.0 // indirect
 	github.com/charmbracelet/x/cellbuf v0.0.13-0.20250311204145-2c3ea96c31dd // indirect
 	github.com/charmbracelet/x/term v0.2.1 // indirect
+	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
+	github.com/chenzhuoyu/iasm v0.9.0 // indirect
 	github.com/containerd/errdefs v0.3.0 // indirect
 	github.com/containers/common v0.60.4 // indirect
 	github.com/distribution/reference v0.6.0 // indirect
@@ -386,14 +391,17 @@ require (
 	github.com/envoyproxy/go-control-plane/envoy v1.32.4 // indirect
 	github.com/facebookincubator/nvdtools v0.1.5 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
+	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/github/go-spdx/v2 v2.3.2 // indirect
 	github.com/go-openapi/jsonreference v0.21.0 // indirect
+	github.com/goccy/go-json v0.10.5 // indirect
 	github.com/google/gnostic-models v0.6.9-0.20230804172637-c7be7c783f49 // indirect
 	github.com/google/go-tpm v0.9.3 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/licensecheck v0.3.1 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
 	github.com/jinzhu/copier v0.4.0 // indirect
+	github.com/klauspost/cpuid/v2 v2.2.9 // indirect
 	github.com/klauspost/pgzip v1.2.6 // indirect
 	github.com/kubescape/go-logger v0.0.23 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
@@ -411,6 +419,8 @@ require (
 	github.com/sigstore/protobuf-specs v0.4.0 // indirect
 	github.com/sylabs/squashfs v1.0.5 // indirect
 	github.com/therootcompany/xz v1.0.1 // indirect
+	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
+	github.com/ugorji/go/codec v1.2.11 // indirect
 	github.com/uptrace/opentelemetry-go-extra/otelutil v0.3.2 // indirect
 	github.com/uptrace/opentelemetry-go-extra/otelzap v0.3.2 // indirect
 	github.com/uptrace/uptrace-go v1.30.1 // indirect
@@ -429,6 +439,7 @@ require (
 	go.opentelemetry.io/otel/log v0.6.0 // indirect
 	go.opentelemetry.io/otel/sdk/log v0.6.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.5.0 // indirect
+	golang.org/x/arch v0.4.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	k8s.io/api v0.32.3 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
