@@ -1,5 +1,1 @@
-some:
-  - stuff
-  - here
-
-whee: true
+sql_injection_check_enabled: false
